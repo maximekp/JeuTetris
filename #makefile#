@@ -1,0 +1,13 @@
+all : prgm
+
+2-Pieces.o : 2-Pieces.c 2-Pieces.h
+	gcc -c $< -o $@
+	
+1-Grid.o : 1-Grid.c 1-Grid.h
+	gcc -c $< -o $@
+	
+0-Main.o : 0-Main.c 0-Main.h
+	gcc -c $< -o $@
+	
+prgrm : 0-Main.o 1-Grid.o 2-Pieces.o
+	gcc $^ -o $@
