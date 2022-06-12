@@ -4,7 +4,7 @@
 #include "1-Grid.h"
 
 
-//This function was created in order to create a blank grid of ten by ten. It is our play frid. Each column has its own letter, printed just above them.
+//This function was created in order to create a blank grid of ten by ten. It is our play grid. Each column has its own letter, printed just above them.
 
 void createGrid (char grid[][10], int size) {
 	printf ("\n  A  B  C  D  E  F  G  H  I  J \n") ;
